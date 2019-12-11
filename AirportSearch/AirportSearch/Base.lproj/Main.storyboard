@@ -25,6 +25,9 @@
                                         <rect key="frame" x="0.0" y="2" width="414" height="56"/>
                                         <color key="barTintColor" white="0.9569331478310501" alpha="0.041309931506849314" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="doq-jE-vbr"/>
+                                        </connections>
                                     </searchBar>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.039865154109589039" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -169,6 +172,7 @@
                     </view>
                     <connections>
                         <outlet property="airportListTable" destination="cKF-Xh-qXD" id="JYA-zV-Qx6"/>
+                        <outlet property="searchBar" destination="pPt-mG-LVB" id="dGJ-fn-Qd4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
