@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,12 @@
 		644C8B5223A1339A0060D496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644C8B5023A1339A0060D496 /* Main.storyboard */; };
 		644C8B5423A1339C0060D496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 644C8B5323A1339C0060D496 /* Assets.xcassets */; };
 		644C8B5723A1339C0060D496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644C8B5523A1339C0060D496 /* LaunchScreen.storyboard */; };
+		644C8B6123A147800060D496 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B6023A147800060D496 /* WebAPI.swift */; };
+		644C8B6423A1479D0060D496 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B6323A1479D0060D496 /* Constants.swift */; };
+		644C8B6723A152720060D496 /* FetchAirportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B6623A152720060D496 /* FetchAirportViewModel.swift */; };
+		644C8B6923A152A00060D496 /* AirportDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B6823A152A00060D496 /* AirportDetailModel.swift */; };
+		644C8B6C23A15BBC0060D496 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B6B23A15BBC0060D496 /* ActivityIndicator.swift */; };
+		644C8B6E23A15EF50060D496 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B6D23A15EF50060D496 /* AlertClass.swift */; };
 		E477A1C42D19380BA776966E /* Pods_AirportSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1569BAEDC53B54F2FC9AE2 /* Pods_AirportSearch.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +29,12 @@
 		644C8B5323A1339C0060D496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		644C8B5623A1339C0060D496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		644C8B5823A1339C0060D496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		644C8B6023A147800060D496 /* WebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		644C8B6323A1479D0060D496 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		644C8B6623A152720060D496 /* FetchAirportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAirportViewModel.swift; sourceTree = "<group>"; };
+		644C8B6823A152A00060D496 /* AirportDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailModel.swift; sourceTree = "<group>"; };
+		644C8B6B23A15BBC0060D496 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		644C8B6D23A15EF50060D496 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
 		824E3143B5C1A482CD036531 /* Pods-AirportSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportSearch.debug.xcconfig"; path = "Target Support Files/Pods-AirportSearch/Pods-AirportSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1569BAEDC53B54F2FC9AE2 /* Pods_AirportSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirportSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE6A647ACD5B9961CBF213B /* Pods-AirportSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportSearch.release.xcconfig"; path = "Target Support Files/Pods-AirportSearch/Pods-AirportSearch.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +73,9 @@
 		644C8B4B23A1339A0060D496 /* AirportSearch */ = {
 			isa = PBXGroup;
 			children = (
+				644C8B6A23A152BA0060D496 /* Model */,
+				644C8B6523A1524E0060D496 /* ViewModel */,
+				644C8B5F23A147450060D496 /* Services */,
 				644C8B5E23A134000060D496 /* Controller */,
 				644C8B4C23A1339A0060D496 /* AppDelegate.swift */,
 				644C8B5023A1339A0060D496 /* Main.storyboard */,
@@ -79,6 +94,33 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		644C8B5F23A147450060D496 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				644C8B6023A147800060D496 /* WebAPI.swift */,
+				644C8B6323A1479D0060D496 /* Constants.swift */,
+				644C8B6B23A15BBC0060D496 /* ActivityIndicator.swift */,
+				644C8B6D23A15EF50060D496 /* AlertClass.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		644C8B6523A1524E0060D496 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				644C8B6623A152720060D496 /* FetchAirportViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		644C8B6A23A152BA0060D496 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				644C8B6823A152A00060D496 /* AirportDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		77180ABB726B2992D4A3213A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +135,6 @@
 				824E3143B5C1A482CD036531 /* Pods-AirportSearch.debug.xcconfig */,
 				BAE6A647ACD5B9961CBF213B /* Pods-AirportSearch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,8 +253,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644C8B6723A152720060D496 /* FetchAirportViewModel.swift in Sources */,
+				644C8B6E23A15EF50060D496 /* AlertClass.swift in Sources */,
 				644C8B4F23A1339A0060D496 /* AirportSearchController.swift in Sources */,
+				644C8B6123A147800060D496 /* WebAPI.swift in Sources */,
 				644C8B4D23A1339A0060D496 /* AppDelegate.swift in Sources */,
+				644C8B6C23A15BBC0060D496 /* ActivityIndicator.swift in Sources */,
+				644C8B6923A152A00060D496 /* AirportDetailModel.swift in Sources */,
+				644C8B6423A1479D0060D496 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
