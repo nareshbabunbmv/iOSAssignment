@@ -14,18 +14,18 @@ class AirportSearchController: UIViewController,ViewModelDelegate {
     @IBOutlet weak var airportListTable: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var filteredDetails:[AirportDetailModel] = []
+    let detailsViewModel = FetchAirportViewModel()
+
 
     override func viewDidLoad() {
         self.airportListTable.isHidden = true
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
+        
         self.view.activityStartAnimating(activityColor: .darkGray, backgroundColor: .clear)
-        let detailsViewModel = FetchAirportViewModel()
         detailsViewModel.delegate = self
         detailsViewModel.getAllAirportDetails()
+
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
     
     func handleError(error: String) {
@@ -49,6 +49,7 @@ class AirportSearchController: UIViewController,ViewModelDelegate {
 }
 
 extension AirportSearchController : UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.filteredDetails.count
     }
@@ -60,9 +61,16 @@ extension AirportSearchController : UITableViewDataSource, UITableViewDelegate {
         cell.city.text = self.filteredDetails[indexPath.row].city
         cell.country.text = self.filteredDetails[indexPath.row].country
         cell.state.text = self.filteredDetails[indexPath.row].state
-        
         return cell
-        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "nearByAirport") {
+            let viewController = controller as! NearByAirportController
+            viewController.detailsViewModel = self.detailsViewModel
+            viewController.selectedAirport = filteredDetails[indexPath.row]
+            self.present(viewController, animated: true, completion: nil)
+        }
     }
 }
 
@@ -80,7 +88,7 @@ extension AirportSearchController:UISearchBarDelegate {
         } else {
             self.airportListTable.isHidden = true
         }
-        
+
         if searchText.count == 0 {
             searchBar.perform(#selector(resignFirstResponder), with: nil, afterDelay: 0.1)
         }
