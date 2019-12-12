@@ -40,6 +40,7 @@ class FetchAirportViewModel {
     }
     
     //To sort and find out first five nearest airport to selected city
+    //Fetch top 5 nearest airport Details based on coordinates distance
     func processNearByAirports(selectedAirport:AirportDetailModel) {
         let userLocation = CLLocation(latitude: Double(selectedAirport.lat)!, longitude: Double(selectedAirport.lon)!)
         

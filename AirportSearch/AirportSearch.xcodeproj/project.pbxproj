@@ -20,6 +20,7 @@
 		644C8B6E23A15EF50060D496 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B6D23A15EF50060D496 /* AlertClass.swift */; };
 		644C8B7123A167270060D496 /* AirportDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B7023A167270060D496 /* AirportDetailCell.swift */; };
 		644C8B7323A172EA0060D496 /* NearByAirportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B7223A172EA0060D496 /* NearByAirportController.swift */; };
+		644C8B7523A1D79F0060D496 /* NearByAirportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C8B7423A1D79F0060D496 /* NearByAirportCell.swift */; };
 		E477A1C42D19380BA776966E /* Pods_AirportSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1569BAEDC53B54F2FC9AE2 /* Pods_AirportSearch.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		644C8B6D23A15EF50060D496 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
 		644C8B7023A167270060D496 /* AirportDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailCell.swift; sourceTree = "<group>"; };
 		644C8B7223A172EA0060D496 /* NearByAirportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByAirportController.swift; sourceTree = "<group>"; };
+		644C8B7423A1D79F0060D496 /* NearByAirportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByAirportCell.swift; sourceTree = "<group>"; };
 		824E3143B5C1A482CD036531 /* Pods-AirportSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportSearch.debug.xcconfig"; path = "Target Support Files/Pods-AirportSearch/Pods-AirportSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1569BAEDC53B54F2FC9AE2 /* Pods_AirportSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirportSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE6A647ACD5B9961CBF213B /* Pods-AirportSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportSearch.release.xcconfig"; path = "Target Support Files/Pods-AirportSearch/Pods-AirportSearch.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				644C8B6B23A15BBC0060D496 /* ActivityIndicator.swift */,
 				644C8B6D23A15EF50060D496 /* AlertClass.swift */,
 				644C8B7023A167270060D496 /* AirportDetailCell.swift */,
+				644C8B7423A1D79F0060D496 /* NearByAirportCell.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				644C8B6E23A15EF50060D496 /* AlertClass.swift in Sources */,
 				644C8B7123A167270060D496 /* AirportDetailCell.swift in Sources */,
 				644C8B4F23A1339A0060D496 /* AirportSearchController.swift in Sources */,
+				644C8B7523A1D79F0060D496 /* NearByAirportCell.swift in Sources */,
 				644C8B6123A147800060D496 /* WebAPI.swift in Sources */,
 				644C8B4D23A1339A0060D496 /* AppDelegate.swift in Sources */,
 				644C8B6C23A15BBC0060D496 /* ActivityIndicator.swift in Sources */,
